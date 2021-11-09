@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.main{
+    width: 100%;
+    
+    background: #f4f4f7;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nav{
+    width: 1519px;
+    height: 75px;
+    position: fixed;
+    background: rgb(0, 29, 110);
+}
+.icon{
+    width: 500px;
+    float: left;
+    height: 90px;
+    text-transform: uppercase;
+	margin: 0;
+	color: #f5f5f5;
+	font-size: 4em;
+}
+.booksworld{
+    color: rgb(243, 235, 235);
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 5px;
+    float: left;
+    padding: 20px;
+    display: table-cell;
+	
+	animation: animate 3s linear infinite;
+	
+}
+ .booksworld span{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	animation: animate 3s linear infinite;
+}
+ .booksworld span:nth-child(1)
+{
+	animation-delay: 0s;
+}
+ .booksworld span:nth-child(2)
+{
+	animation-delay: 0.25s;
+}
+ .booksworld span:nth-child(3)
+{
+	animation-delay: 0.5s;
+}
+ .booksworld span:nth-child(4)
+{
+	animation-delay: 0.75s;
+}
+ .booksworld span:nth-child(5)
+{
+	animation-delay: 1s;
+}
+ .booksworld span:nth-child(6)
+{
+	animation-delay: 1.25s;
+}
+ .booksworld span:nth-child(7)
+{
+	animation-delay: 1.5s;
+}
+ .booksworld span:nth-child(8)
+{
+	animation-delay: 1.75s;
+}
+.booksworld span:nth-child(9)
+{
+	animation-delay: 2s;
+}
+.booksworld span:nth-child(10)
+{
+	animation-delay: 2.25s;
+}
+@keyframes animate 
+{
+	0%,100%
+	{
+		color: #03090e;
+		filter: blur(2px);
+		text-shadow: 0 0 10px white,
+		            0 0 20px white,
+					0 0 40px  white,
+					0 0 80px  white,
+					0 0 1200px  white,
+					0 0 200px  white,
+					0 0 300px  white,
+					0 0 400px  white;     
+	}
+	5%,95%
+	{
+		color: rgb(208, 221, 31);
+		filter: blur(0px);
+		text-shadow:none;
+	}
+}
+.btn{
+    width: 650px;
+    float: right;
+    height: 70px;   
+}
+ul{
+    float: left;
+    display: flex;
+    
+    
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 19px; 
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(240, 231, 231);
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: rgb(14, 126, 19);
+}
+h1{
+    color:black;
+    display: flex;
+    padding: 10px 135px;
+
+}
+
+section{
+    background-color: rgb(0, 3, 7);
+    height: auto;
+    width: auto;
+}
+.product h1{
+    color: whitesmoke;
+}
+.product .box-cantainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 0.5fr));
+    gap: 1.2rem;
+}
+
+.product .box-cantainer .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+.product .box-cantainer .box .icon a{
+    height: 20rem;
+    width: 20rem;
+    line-height: 20rem;
+    font-size: 10rem;
+    border: whitesmoke;
+    color: whitesmoke;
+    
+              
+}
+.product .box-cantainer .box .icon a:hover{
+    background: red;
+}
+.product .box-cantainer .box .image img{
+    height: 15rem;
+}
+.product .box-cantainer .box .content h3{
+    padding: 20px;
+    color: rgb(10, 214, 20);
+    font-size: 1.2rem;
+}
+.product .box-cantainer .box .content .d{
+    padding: 0.1rem;
+}
+.product .box-cantainer .box .content .i{
+    font-size: 1.0rem;
+    color: blue;
+}
+.product .box-cantainer .box .content .author{
+    font-size: 25px;
+    color: rgb(252, 251, 250);
+}
+.product .box-cantainer .box .content .price{
+    
+    color: rgb(245, 240, 240);
+    font-size: 1.5rem;
+}
+.product .box-cantainer .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    color:rgb(184, 25, 25);
+    font-size: 1.5rem;
+}
+
+.product .box-cantainer .box .content .bt{
+    width: 50px;
+    height: 30px;
+    background: orangered;
+    border: none;
+   
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s ease;
+    
+}
+.product .box-cantainer .box .content .bt a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 2.3s ease ;
+}
+.product .box-cantainer .box .content .bt:hover{
+    
+        background-color: rgb(31, 30, 30);
+}
